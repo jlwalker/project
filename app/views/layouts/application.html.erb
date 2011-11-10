@@ -10,15 +10,25 @@
 </head>
 <body>
 	<div class = "containter">
-		<div class = "nav">
-			<%= link_to "Home", '#'%>
-			<%= link_to "Help", '#'%>
-			<%= link_to "Sign in", '#'%>
-
-		</div>
-	</div>
+		<header>
+			<nav>	
+				<%= link_to "Home", '#'%>
+				<%= link_to "Help", '#'%>
+				<%= link_to "Sign in", '#'%>
+			</nav>
+			</header>
 
 <%= yield %>
+	<footer>
+		<nav>
+				<%= link_to "About", '#'%>
+				<%= link_to "Contact", '#'%>
+				<%= link_to "New", 'http://news.railstutorial.org'%>
+				<%= link_to "Rails tutorial", 'http://news.railstutorial.org'%>
+
+		</nav>
+	</footer>	
+	</div>
 
 </body>
 </html>
